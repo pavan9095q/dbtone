@@ -40,8 +40,7 @@ models:
     # Applies to all files under models/example/
     Marts:
       +materialized: table
-      +post-hook:
-        - "Comment on table {{ this }} is 'this table was created by dbt';"
+
     
 query-comment:
   comment: "this was run by dbt"
