@@ -40,3 +40,5 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+      +post-hook:
+        - "Comment on the {{ this }} table is 'This Table Was Created By DBT';"
