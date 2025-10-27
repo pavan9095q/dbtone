@@ -3,6 +3,5 @@
         materialized='table'
     )
 }}
-
-select *
+select * 
 from {{ source('dbtone', 'EMPLOYEES') }}
