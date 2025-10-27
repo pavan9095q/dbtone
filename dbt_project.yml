@@ -36,7 +36,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project:
+  dbtone:
     # Applies to all files under models/example/
-    example:
+    Marts:
       +materialized: table
+      +post-hook:
+        - "Comment on table {{ this }} is 'this table was created by dbt';"
+    
+query-comment:
+  comment: "this was run by dbt"
+  append: true

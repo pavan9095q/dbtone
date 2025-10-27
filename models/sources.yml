@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: dbtone
+    database: HRMS
+    schema: HR
+    tables:
+      - name: EMPLOYEES
+      - name: DEPARTMENTS
+      - name: JOBS
+      
