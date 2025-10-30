@@ -8,4 +8,13 @@ sources:
       - name: EMPLOYEES
       - name: DEPARTMENTS
       - name: JOBS
-      
+
+  - name: dbtone_parque
+    database: HRMS
+    schema: PARQUE_DBT
+    tables:
+      - name: ORDERS
+      - name: PRODUCTS
+      - name: REVIEWS
+      - name: USERS
+    
